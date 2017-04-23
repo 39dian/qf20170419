@@ -19,7 +19,7 @@ $(function(){
 	//加载图片
 	function getPics(id,url){
 
-		$.post(url,function(data){
+		$.get(url,function(data){
 			if(data.length<pic_page_size||data.length==0) {
 				$("#infi").hide();	//隐藏加载更多html代码
 				is_last_page=true;
@@ -44,7 +44,7 @@ $(function(){
 
 	//获取英文产品数据
 	function getproInfo(id,url){
-		$.post(url,function(data){
+		$.get(url,function(data){
 			$("#article").html(data.Article);
 			$("#name").html(data.Name);
 			$("#content").html(data.Content);
