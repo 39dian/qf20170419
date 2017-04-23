@@ -50,7 +50,7 @@ $(function(){
 			$("#content").html(data.Content);
 			$("#width").html(data.Width);
 			$("#weight").html(data.Weight);
-
+			$(".note").html(data.Info);
 			for(var i=0;i<data.Pics1.length;i++){
 				$(".tag").html($(".tag").html()+"<img src='resources/images/"+data.Pics1[i]+".jpg' />");
 			}
