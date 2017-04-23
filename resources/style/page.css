@@ -1,0 +1,28 @@
+em,b,i{ font-style: normal; font-weight: normal;}
+ul,li{ margin:0; padding: 0; list-style: none;}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th { padding: 0; }
+html, button, input, select, textarea { font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6, p, figure, form, blockquote { margin: 0; }
+ul, ol, li, dl, dd { margin: 0; padding: 0; }
+ul, ol { list-style: none outside none; }
+h1, h2, h3 { font-weight: normal; }
+i,em{ font-style:normal; outline:none;}
+body{ font-size:0.72rem; line-height: 0.9rem;}
+.logo {width:2.8rem; padding-top:1rem;}
+.title{ font-weight: bold; }
+.attributes{ font-weight: bold;}
+.tag,.notice{ float: right;}
+.tag span{ display: inline-block; float: left; width:2.2rem; height: 1.7rem; padding-top: 0.6rem; margin-right: 0.1rem;
+    background: #010101; text-align: center;
+    font-size: 0.4rem; line-height: 0.5rem; color:#fff;}
+.tag span.odd{background: #333;}
+.tag img{ width:2.4rem; margin-right:0.1rem;}
+.notice img{ width:1.7rem;margin-right:0.2rem;}
+.note{ margin: 0.5rem 0 1.5rem 0.2rem;}
+.attributesList th{ font-weight: bold;}
+.attributesList{ text-align: center;}
+.attributesList td i{ display: inline-block; float:left; width:1.8rem; height: 1.8rem; margin:0 0 0.2rem;}
+.attributesList td span{ display: inline-block; float:left; margin-left: 0.2rem; vertical-align: middle; }
+.imgList{ width:100%; margin:1.5rem auto 1rem}
+.imgList li{ width:31%; float:left; border:1px solid #000; margin:0 0.86% 0.2rem;}

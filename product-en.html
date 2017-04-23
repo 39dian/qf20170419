@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="resources/style/page.css">
+    <link rel="stylesheet" href="resources/style/weui.css">
+    <link rel="stylesheet" href="resources/style/jquery-weui.css">
+    <link rel="stylesheet" href="resources/style/fsgallery.css">
+
+    <script type="text/javascript" src="resources/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="resources/js/fastclick.js"></script>
+    <script type="text/javascript" src="resources/js/jquery-weui.js"></script>
+    <script type="text/javascript" src="resources/js/jquery-jtemplates.js"></script>
+    <script type="text/javascript" src="resources/js/fs_forse.js"></script>
+    <script type="text/javascript" src="resources/js/product.js"></script>
+
+</head>
+<body>
+
+<table width="100%">
+    <tr>
+        <td rowspan="2" valign="top">
+            <div class="logo"><img src="resources/images/logo-en.jpg" width="100%"></div>
+            
+        </td>
+        <td rowspan="2" valign="top" class="attributes">
+            <table width="100%">
+                <tr>
+                    <td valign="top">Article:</td>
+                    <td align="right" valign="top"><span id="article"></span></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td align="right"><span id="name"></span></td>
+                </tr>
+                <tr>
+                    <td>Content:</td>
+                    <td align="right"><span id="content"></span></td>
+                </tr>
+                <tr>
+                    <td>Width:</td>
+                    <td align="right"><span id="name"></span></td>
+                </tr>
+                <tr>
+                    <td>Weight:</td>
+                    <td align="right"><span id="weight"></span></td>
+                </tr>
+            </table>
+        </td>
+        <td  valign="top">
+            <div class="tag">
+
+            </div>
+        </td>
+        
+    </tr>
+    <tr>
+        <td>
+            <div class="notice">
+
+            </div>
+        </td>
+    </tr>
+</table>
+
+<p class="note">Classic nylon taffeta ,applied on many top brands . Twisted yarn enable it higher density with special outlook and touch</p>
+
+<div id="result_container"></div>
+
+
+
+<textarea id="template-items" style="display:none;">
+<table width="100%" class="attributesList">
+    <tr>
+        <th style="text-align:left; padding-left: 0.2rem;">Color</th>
+        <th>In stock</th>
+        <th>Fob/M</th>
+        <th colspan="2">CIF EU</th>
+        <th>Greige</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Meter</td>
+        <td>USD</td>
+        <td>By sea</td>
+        <td>By air</td>
+        <td>in stock</td>
+    </tr>
+{#foreach $T as item}
+     <tr>
+         <td valign="top"><i style="background:{$T.item[0]}; margin-left: 0.2rem;margin-top:0.2rem"></i><span>{$T.item[1]}<br>{$T.item[2]}</span></td>
+         <td>{$T.item[3]}</td>
+         <td>{$T.item[4]}</td>
+         <td>{$T.item[5]}</td>
+         <td>{$T.item[6]}</td>
+         <td>{$T.item[7]}</td>
+ {#/for}
+ </tr>
+</table>
+</textarea>
+
+
+
+
+
+<ul class="imgList">
+</ul>
+<div id="tempImgList" style="display: none;"></div>
+<textarea id="template-img" style="display:none;">
+    {#foreach $T as img}
+        <li><a href="{$T.img[1]}"><img src="{$T.img[0]}" width="100%"></a></li>
+    {#/for}
+</textarea>
+
+
+<div id="infi" style="clear:both">
+    <div class="weui-infinite-scroll">
+        <div class="infinite-preloader"></div>正在加载...
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+#wrapper{
+	position: absolute;
+	z-index: 1;
+	top: 8.0rem;
+	bottom:0rem;
+	left: 0;
+	width: 100%;
+	overflow: auto;
+}
+.list_header {
+	clear:both;
+	position:absolute;
+	width:100%;
+	padding:0.1rem;
+	background: #FFFFFF;
+	border-bottom:1px solid #ccc;
+	min-height:5.5rem;
+}
+.list_header .hi {
+	width: 16%;
+	float:left;
+	text-align:center;
+	margin-left: 0.6rem;
+}
+.list_header .hi img{
+	height:4.0rem;
+	margin-bottom:0.8rem;
+	margin-top:0.6rem;
+}
+.list_header .hc {
+	padding-top:1.0rem;
+	padding-left:1.2rem;
+	width: 38%;
+	float:left;
+}
+.list_header .hc p{
+	padding-bottom:0.5rem;
+	font-size:0.9rem;
+	color:#8F8F8F;
+}
+.list_header .hc .title{
+	font-size:0.9rem;
+	color:#363636;
+}
+.list_header .hb {
+	width:35%;
+	float:left;
+	height:4.5rem;
+	line-height:4.5rem;
+	text-align:center;
+	cursor: pointer;
+}
+.sign{
+	float:left;
+	height:1.6rem;
+	line-height:1.6rem;
+	margin-top: 0.3rem;
+	font-size:0.9rem;
+	width: 22%;
+}
+.sign button{
+	background-color:#F5F5F5;
+	border-radius:0.3rem;
+	padding: 0.2rem;
+	border:1px solid #ccc;
+	width: 4rem;
+	margin-right: 1.5rem;
+}
+.pub{
+	float:left;
+	height:1.8rem;
+	line-height:1.8em;
+	border-radius:0.2rem;
+	margin-top: 0.3rem;
+	font-size:0.9rem;
+	width: 15%;
+}
+.pub button{
+	background-color:#F5F5F5;
+	border-radius:0.3rem;
+	padding: 0.2rem;
+	border:1px solid #ccc;
+	width: 3.2rem;
+}
+.list_tab {
+	position:relative;
+	top:5.1rem;
+	background: #F5F5F5;
+	height:2.8rem;
+	font-size: 0.8rem;
+	padding-top: 0.3rem;
+}
+.list_tab .all {
+	width: 24%;
+	float:left;
+	text-align:center;
+	height:2.5rem;
+	line-height:2.3rem;
+	border-bottom:2px solid #FFB800;
+	border-right:1px solid #E7E7E7;
+}
+.list_tab .topic {
+	height:2.5rem;
+	line-height:2.3rem;
+	width: 24%;
+	float:left;
+	text-align:center;
+	border-right:1px solid #E7E7E7;
+}
+.topic_img{
+	background:url(../../images/ico-talk.png) 0 0 no-repeat;
+	background-size:1.2rem 1.2rem;
+	margin-left:1.0rem;
+	padding-left:0.1rem;
+	color:#333333;
+	width:4.5rem;
+	height:2.0rem;
+	line-height:2.0rem;
+	background-position: left;
+}
+.list_tab .help {
+	width: 24%;
+	float:left;
+	height:2.5rem;
+	line-height:2.3rem;
+	text-align:center;
+	border-right:1px solid #E7E7E7;
+}
+.help_img{
+	background:url(../../images/ico-group.png) 0 0 no-repeat;
+	background-size:1.2rem 1.2rem;
+	margin-left:1.0rem;
+	color:#333333;
+	width:4.5rem;
+	height:2.0rem;
+	padding-left:0.1rem;
+	line-height:2.0rem;
+	background-position: left;
+}
+.list_tab .secondHand {
+	width: 24%;
+	float:left;
+	height:2.5rem;
+	line-height:2.3rem;
+	text-align:center;
+}
+.secondHand_img{
+	background:url(../../images/ico-secondHand.png) 0 0 no-repeat;
+	background-size:1.2rem 1.2rem;
+	margin-left:1.0rem;
+	color:#333333;
+	width:4.5rem;
+	padding-left:0.1rem;
+	height:2.0rem;
+	line-height:2.0rem;
+	background-position: left;
+}
+.list_tab span{
+	height:2.5rem;
+}
+.list_item {
+	clear:both;
+	width: 100%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top:2%;
+    overflow: hidden;
+    min-height:9.2rem;
+}
+.list_item .head  {
+	height:3.8rem;
+}
+.list_item .photo{
+	float: left;
+	width: 15%;
+}
+.list_item .photo  img{
+	float: left;
+	width: 3.2rem;
+	height:3.2rem;
+	border-radius:3.8rem;
+}
+.list_item .user  {
+	margin-top:0.7rem;
+	margin-left:3%;
+	height:2.5rem;
+	float: left;
+	width: 65%;
+}
+.list_item .user  p {
+	float: left;
+	font-size: 0.7rem;
+	margin-top: 0.2rem;
+	color: gray;
+}
+.list_item .user  h3 {
+	font-size: 1.0rem;
+	color: #566B94;
+}
+.list_item .type{
+	float: left;
+	width: 15%;
+}
+.list_item .type img {
+	height:2.0rem;
+	margin-bottom:0.3rem;
+	margin-top:1.0rem;
+	float: left;
+	vertical-align: middle;	
+}
+.list_item .content {
+	width: 90%;
+	margin-left: 2%;
+	float: left;
+}
+.list_item .content h3 {
+	padding-bottom:1%;
+	font-size:1.0rem;
+	color: black;
+	width:95%;
+}
+.list_item .content p{
+	margin-top:1%;
+	padding-bottom:0.5rem;
+	font-size:0.8rem;
+	width:95%;
+}
+.footer {
+	height:2.8rem;
+	line-height:1.8rem;
+	text-align:right;
+	float: left;
+	width:100%;
+}
+.praise_bt{
+	float: left;
+	width: 75%;
+	margin-right: 4%; 
+}
+.reply_bt{
+	float: left;
+	width: 20%;
+}
+.reply_yellow{
+	background:url(../../images/ico-discussYellow.png) 0 0 no-repeat;
+	background-size:1.3rem 1.3rem;
+	margin-top:0.5rem;
+	width:2.2rem;
+	color:#C0C0C0;
+	height:2.0rem;
+	line-height:2.0rem;
+	background-position: left;
+}
+.praise_yellow{
+	background:url(../../images/ico-likeYellow.png) 0 0 no-repeat;
+	background-size:1.3rem 1.3rem;
+	margin-top:0.5rem;
+	color:#C0C0C0;
+	width:2.2rem;
+	height:2.0rem;
+	line-height:2.0rem;
+	background-position: left;
+	float: right;
+}
+.praise_no{
+	background:url(../../images/ico-like.png) 0 0 no-repeat;
+	background-size:1.3rem 1.3rem;
+	color:#C0C0C0;
+	margin-top:0.5rem;
+	width:2.2rem;
+	height:2.0rem;
+	line-height:2.0rem;
+	background-position: left;
+	float: right;
+}
+
+.errmsg {
+	color: red;
+	font-size: 12px;
+	margin-top: 1.0rem;
+}
+.image_all{
+	min-height:3.8rem;
+	line-height:3.8rem;
+	text-align:right;
+}
+#scroller .image_all li {
+	padding:none;
+	border-bottom:none;
+	border-top:none;
+	background-color:#ffffff;
+	font-size:14px;
+}
+.topicImg{
+	width:20%;
+	margin-right: 5%;
+	margin-bottom:1%;
+	height: 3.5rem;
+	float: left;
+}
